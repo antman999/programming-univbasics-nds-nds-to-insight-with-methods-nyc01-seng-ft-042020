@@ -19,7 +19,7 @@ end
 # { directorOne => allTheMoneyTheyMade, ... }
 def directors_totals(nds)
    counter = 0
- hash = {}
+  result = {}
  while  counter <nds.length do
     gross=0
     index=0 
@@ -28,11 +28,9 @@ def directors_totals(nds)
     index +=1
   end
   director=nds[counter][:name]
- hash[director]=gross
+ result[director]=gross
 counter +=1
 end
- return hash
+ return result
 end
-  result = {}
-  nil
 end
